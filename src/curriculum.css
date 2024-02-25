@@ -1,0 +1,139 @@
+.curriculum-background {
+  /* background-image: linear-gradient(#ebebeb 17%, #fff 17%); */
+  /* background-image: linear-gradient(90deg, #fff 65%, #ebebeb 65%); */
+}
+
+/* .bg-circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: initial;
+  z-index: 0;
+} */
+
+.curriculum-container {
+  z-index: 1;
+  border-radius: 0%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "basic basic"
+    "summary contact"
+    "education language"
+    "exp exp";
+
+  grid-template-rows: repeat(auto-fit);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* .decorative-cv {
+  position: relative;
+  width: 80%;
+  grid-area: decorator;
+  background-color: rgb(112, 179, 255);
+  height: 50px;
+  border-radius: 0px 0px 5px 5px;
+} */
+/* basic-info-cv */
+
+.basic-info-container {
+  grid-area: basic;
+  margin-left: 50px;
+}
+
+.name-cv {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.profession-cv {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.location-cv {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* summary */
+.summary-container {
+  grid-area: summary;
+  margin-left: 50px;
+}
+
+.summary-cv {
+  width: 80%;
+  font-weight: 200;
+}
+
+/* Contact */
+
+.contact-container {
+  grid-area: contact;
+  margin-right: 50px;
+}
+
+.email-cv,
+.phone-number-cv,
+.link-cv {
+  font-weight: 200;
+}
+
+/* Education */
+.education-container {
+  grid-area: education;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+.university2-cv,
+.university-cv,
+.course-cv,
+.course-date {
+  font-weight: 200;
+}
+
+.university2-cv {
+  margin-top: 20px;
+}
+
+.language-cv {
+  grid-area: language;
+}
+
+.experience-cv {
+  grid-area: exp;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px;
+}
+
+.exp-title {
+  margin: 0;
+}
+
+.company-cv {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.company-cv,
+.position-cv,
+.jobDate {
+  font-weight: 200;
+}
+
+.language,
+.proficiency {
+  font-weight: 200;
+}
+
+.proficiency {
+  margin-bottom: 20px;
+}
+
+.language-cv {
+  font-weight: 500;
+}
